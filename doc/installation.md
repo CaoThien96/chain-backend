@@ -10,8 +10,8 @@
 #
 # Install package via SSH.
 #   * <tag> Specific tag.
-npm install git+ssh://git@github.com:ezDeFi/chain-backend.git#<tag>
-
+npm install git+ssh://git@github.com:CaoThien96/chain-backend.git#<tag>
+# git@github.com:CaoThien96/chain-backend.git
 # STEP 3.
 # 
 # Test. 

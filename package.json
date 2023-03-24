@@ -13,7 +13,6 @@
   "dependencies": {
     "@ethersproject/providers": "https://github.com/launchzone/ethers.js/releases/download/v5.3.1.1/ethers_providers.tar.gz",
     "@trop/gear": "^0.4.2",
-    "assisted-json-rpc-provider": "git+ssh://git@github.com:launchzone/AssistedJsonRpcProvider.git",
     "bsc_util": "^0.4.0",
     "caching-map": "^1.0.2",
     "ethers": "^5.1.4",

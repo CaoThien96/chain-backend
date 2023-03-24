@@ -2,7 +2,6 @@
 
 const { ethers } = require('ethers')
 const {JsonRpcProvider} = require('@ethersproject/providers')
-const { AssistedJsonRpcProvider } = require('assisted-json-rpc-provider')
 const {Mongoose} = require('mongoose')
 const sfarmAbi = require('./sfarm-abi.json').abi
 const {
@@ -58,17 +57,7 @@ function createConsumer(config) {
 
 async function main() {
     let mongoose = await createMongoose()
-    let provider = new AssistedJsonRpcProvider(
-        new JsonRpcProvider('https://bsc-dataseed.binance.org'),
-        {
-            rateLimitCount: 5,
-            rateLimitDuration: 1000,
-            rangeThreshold: 4000,
-            maxResults: 1000,
-            url: 'https://api.bscscan.com/api',
-            apiKeys: ['JHJMRMD22RVUMHKFM1KRNXCYI2S6M85Y22', 'ZK82FBHZBUD9BDSB9SCS1NVT3K7Y8R2TKF', 'YD1424ACBTAZBRJWEIHAPHFZMT69MZXBBI'],
-        }
-    )
+    let provider = new JsonRpcProvider('https://bsc-dataseed.binance.org')
 
     const processorConfigs = {
         merge: chainlogProcessorConfig({

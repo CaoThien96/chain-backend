@@ -747,15 +747,6 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
-"assisted-json-rpc-provider@git+ssh://git@github.com:launchzone/AssistedJsonRpcProvider.git":
-  version "0.2.0"
-  resolved "git+ssh://git@github.com:launchzone/AssistedJsonRpcProvider.git#a4cd93e46291de363f5a6c8991a0cbe41bea68d4"
-  dependencies:
-    async-task-throttle-on-response "^1.0.1"
-    ethers "^5.5.3"
-    lodash "^4.17.21"
-    node-fetch "2"
-
 async-task-throttle-on-response@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/async-task-throttle-on-response/-/async-task-throttle-on-response-1.0.1.tgz#cca646d6f45dad3a345de1e2fce655d3ed162afc"
